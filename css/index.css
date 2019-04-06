@@ -1,0 +1,37 @@
+header .container-fluid{
+    padding: 0 25px 0 25px;
+}
+
+header .navbar{
+    margin-bottom: 0;
+}
+
+.main-page .container-fluid{
+    position: relative;
+    background: url(../img/main_bgImg.jpg);
+    background-size: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.main-page .mask-layer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.main-page .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    line-height: 250px;
+}
+
+.main-page .content img{
+    width: 120px;
+    height: 120px;
+}
+
