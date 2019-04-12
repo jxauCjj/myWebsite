@@ -6,30 +6,29 @@ header .container-fluid{
 header .navbar{
     margin-bottom: 0;
 }
+
+header .navbar-brand{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
 /*main-page主页相关样式*/
+.main-page{
+    margin-top: 50px;
+}
+
 .main-page .container-fluid{
     position: relative;
     background: url(../img/banner.jpg);
     background-size: cover;
-    height: 600px;
-    overflow: hidden;
-}
-
-.main-page .mask-layer{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    min-height: 500px;
 }
 
 .main-page .content{
-    /*position: absolute;*/
     width: 100%;
     height: 100%;
     color: white;
     margin-top: 150px;
-    /*line-height: 250px;*/
 }
 
 .main-page .content img{
@@ -38,24 +37,53 @@ header .navbar{
 }
 
 /*自我介绍样式*/
+
+/*个人简介部分*/
 .my-info{
     margin-top: 100px;
+    padding: 20px 0;
+    background: #f7f7f7;
     text-align: center;
+
 }
 
 .my-info .my-img{
     vertical-align: middle;
 }
 
-.my-info .my-content p{
-    line-height: 30px;
-    font-size: 16px;
-    margin-top: 20px;
+.my-info .common{
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
 }
+
+/*教育经历部分*/
+.education{
+    margin-top: 50px;
+}
+
+.edu-img{
+    min-height: 440px;
+    background-image: url(../img/edu.jpg);
+    background-size: cover;
+}
+
+/*技能部分*/
+.skill{
+    margin-top: 50px;
+}
+
+.skill-img{
+    min-height: 440px;
+    background-image: url(../img/exp.jpg);
+    background-size: cover;
+}
+
 
 /*项目展示样式*/
 .project{
     margin-top: 100px;
+    background-color: #f5f5f5;
     text-align: center;
 }
 
@@ -63,6 +91,13 @@ header .navbar{
     margin-top: 40px;
 }
 
+/*项目展示样式*/
+.project .col-md-4{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+
+}
 
 /*页脚展示*/
 footer{

@@ -10,7 +10,7 @@
 <body>
     <header>
         <!--导航栏-->
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
@@ -18,23 +18,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">编程之家</a>
+                    <span class="navbar-brand" >编程之家</span>
                 </div>
                 <div class="collapse navbar-collapse" id="mymenu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">主页</a></li>
-                        <li><a href="#">个人简介</a></li>
-                        <li><a href="#">学习经历</a></li>
-                        <li><a href="#">个人项目</a></li>
+                        <li ><a href="#main-page" class="smooth-scroll">主页</a></li>
+                        <li><a href="#my-info" class="smooth-scroll">个人简介</a></li>
+                        <li><a href="#my-info" class="smooth-scroll">学习经历</a></li>
+                        <li><a href="#project" class="smooth-scroll">个人项目</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!--主页-->
-        <div class="main-page">
+        <div class="main-page" id="main-page">
             <div class="container-fluid">
-                <!--背景图片遮罩层-->
-                <!--<div class="mask-layer"></div>-->
                 <!--内容区域 使用栅格使其居中-->
                 <div class="row">
                     <div class="content text-center col-md-10 col-offset-1">
@@ -46,13 +44,14 @@
         </div>
     </header>
     <!--个人信息展示-->
-    <div class="my-info">
-        <div class="container">
+    <div class="my-info" id="my-info">
+        <!--个人简介部分-->
+        <div class="container-fluid simple-info">
             <div class="row">
                 <div class="col-sm-4 my-img">
                     <img src="./img/me.jpg" alt="个人图片" class="img-responsive center-block">
                 </div>
-                <div class="col-sm-7 my-content">
+                <div class="col-sm-7 my-content common">
                     <h2>个人简介</h2>
                     <p>
                         工作式的自我介绍的内容，应当包括本人姓名、供职的单位及其部门、担负的职务或从事的具体工作等三项。
@@ -63,10 +62,39 @@
                 </div>
             </div>
         </div>
+        <!--教育经历部分-->
+        <div class="container education">
+            <div class="row">
+                <div class="col-md-4 edu-content common">
+                    <p>
+                        工作式的自我介绍的内容，应当包括本人姓名、供职的单位及其部门、担负的职务或从事的具体工作等三项。
+                        他们叫作工作式自我介绍内容的三要素，通常缺一不可。其中，第一项姓名，应当一口报出，不可有姓无名，
+                        或有名无姓。第二项供职的单位及其部门，有可能最好全部报出，具体工作部门有时也可以暂不报出。
+                        第三项担负的职务或从事的具体工作，有职务最好报出职务，职务较低或者无职务，则可报出所从事的具体工作
+                    </p>
+                </div>
+                <div class="col-md-8 edu-img"></div>
+            </div>
+        </div>
+        <!--技术技能部分-->
+        <div class="container skill">
+            <div class="row">
+                <div class="col-md-8 skill-img"></div>
+                <div class="col-md-4 skill-content common">
+                    <p>
+                        工作式的自我介绍的内容，应当包括本人姓名、供职的单位及其部门、担负的职务或从事的具体工作等三项。
+                        他们叫作工作式自我介绍内容的三要素，通常缺一不可。其中，第一项姓名，应当一口报出，不可有姓无名，
+                        或有名无姓。第二项供职的单位及其部门，有可能最好全部报出，具体工作部门有时也可以暂不报出。
+                        第三项担负的职务或从事的具体工作，有职务最好报出职务，职务较低或者无职务，则可报出所从事的具体工作
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!--<div class="dest-job"></div>-->
     <!--项目展示-->
-    <div class="project">
+    <div class="project" id="project">
         <div class="container">
             <h2>我的项目</h2>
             <div class="row">
@@ -105,4 +133,12 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--平滑过渡插件-->
+    <script src="https://cdn.bootcss.com/jquery-smooth-scroll/2.1.1/jquery.smooth-scroll.min.js"></script>
+
+    <script>
+        $(".smooth-scroll").smoothScroll({
+            offset: -70
+        });
+    </script>
 </html>
